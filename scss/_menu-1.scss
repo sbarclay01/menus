@@ -1,0 +1,52 @@
+$menu-1-bg: #f4d6cc;
+$menu-1-btn: #f4c560;
+$menu-1-border: #c83e4d;
+
+.menu-1 {
+    background-color: $menu-1-bg;
+    height: 400px;
+    background-image: url("../images/red-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    ul {
+        @include flex(center, center);
+        height: 250px;
+        gap: 40px;
+        font-family: $ff;
+        font-size: $fs-500;
+    }
+
+    li {
+        padding: 10px 40px;
+        // margin: 20px;
+        background-color: $menu-1-btn;
+        margin-top: 100px;
+        border: 1px solid $menu-1-border;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(16, 16, 16, 0.2);
+        transition: all 0.4s ease-out;
+
+        a {
+            color: $menu-1-border;
+        }
+
+        &:hover {
+            transform: rotate(-3deg);
+            background-color: #e8aa0c;
+            font-family: $ff-retro;
+            font-size: $fs-600;
+            color: #f46060;
+            border: 8px dotted rgb(255, 200, 0);
+            text-shadow: 1px 1px 1px #eeebbf, 1px 2px 1px #f6d449,
+                1px 3px 1px #fdc40a, 1px 4px 1px #e0b003, 1px 5px 1px #b58906,
+                1px 6px 1px #99780d, 1px 7px 1px #937308, 1px 8px 1px #8d7209,
+                1px 9px 1px #7b6304, 1px 10px 1px #987408,
+                1px 18px 6px rgba(16, 16, 16, 0.4),
+                1px 22px 10px rgba(16, 16, 16, 0.2),
+                1px 25px 35px rgba(16, 16, 16, 0.2),
+                1px 30px 60px rgba(16, 16, 16, 0.4);
+            box-shadow: 3px 4px 5px rgba(16, 16, 16, 0.6);
+            filter: contrast(150%);
+        }
+    }
+}

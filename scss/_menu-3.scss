@@ -1,0 +1,46 @@
+$shadow-color: #ff9e9e;
+$shadow-color-light: white;
+
+.menu-3 {
+    height: 400px;
+    background-image: url("../images/dark-gray.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ul {
+        @include flex(center, center);
+        height: 300px;
+        gap: 40px;
+        font-family: $ff;
+        font-size: $fs-500;
+
+        a {
+            color: white;
+        }
+    }
+
+    .btn {
+        padding: 10px 40px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        z-index: 100;
+        position: relative;
+        background-color: rgba(226, 226, 226, 0.4);
+        transition: all 0.4s ease-out;
+
+        &:hover {
+            background-color: rgba(217, 238, 245, 0.958);
+            background-image: url("../images/rainbow-swoop.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-size: $fs-500;
+            font-weight: 900;
+            box-shadow: rgb(106, 16, 252) 0px 0px 0px 3px,
+                rgb(85, 91, 255) 0px 0px 0px 3px,
+                rgb(31, 193, 27) 0px 0px 0px 6px,
+                rgb(255, 217, 19) 0px 0px 0px 9px,
+                rgb(255, 156, 85) 0px 0px 0px 12px,
+                rgb(255, 85, 85) 0px 0px 0px 15px;
+        }
+    }
+}

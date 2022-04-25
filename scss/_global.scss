@@ -1,0 +1,54 @@
+//global-colors
+
+$background: #f4f1de;
+
+//fonts
+
+$ff: "Lato", sans-serif;
+$ff-retro: "Lobster", cursive;
+$ff-regular: 400;
+$ff-bold: 700;
+$ff-heavy: 800;
+
+//font-size
+
+$fs-600: 2rem;
+$fs-500: 1.3rem;
+$fs-400: 1rem;
+$fs-300: 0.8rem;
+$fs-200: 0.6rem;
+
+// MIXINS
+
+@mixin list-styles {
+    list-style-type: none;
+}
+
+@mixin center-both {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin link-fix {
+    text-decoration: none;
+}
+
+@mixin flex($a, $b) {
+    display: flex;
+    align-items: $a;
+    justify-content: $b;
+}
+
+body {
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
